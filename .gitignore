@@ -1,0 +1,33 @@
+
+# Experiment outputs / model artifacts
+outputs/
+wandb/
+runs/
+checkpoints/
+
+# Model/checkpoint files
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Local development / AI tooling
+.agents/
+.codex/
+
+# Caches
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments and OS files
+.venv/
+.env
+.DS_Store
+Thumbs.db

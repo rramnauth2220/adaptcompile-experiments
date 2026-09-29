@@ -1,0 +1,84 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_lofo.py",
+  "input_files": [
+    "artifacts/llama/lofo/lofo_summary.csv"
+  ],
+  "git_commit": "53b73bfaa0cd3a4fe91ac8a1fdda1be1742814f5",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "summary": [
+    {
+      "held_out_learning_type": "behavioral_policy",
+      "objective": "Behavioral",
+      "n_test_episodes": 20,
+      "global_fixed_mean_utility": 0.7144097222222222,
+      "compiler_mean_utility": 0.7196527777777777,
+      "oracle_mean_utility": 0.7533854166666666,
+      "global_fixed_oracle_regret": 0.0389756944444444,
+      "compiler_oracle_regret": 0.0337326388888888,
+      "compiler_oracle_optimal_fraction": 0.3,
+      "global_fixed_oracle_optimal_fraction": 0.15
+    },
+    {
+      "held_out_learning_type": "causal_mapping",
+      "objective": "Causal",
+      "n_test_episodes": 20,
+      "global_fixed_mean_utility": 0.425173611111111,
+      "compiler_mean_utility": 0.425173611111111,
+      "oracle_mean_utility": 0.5073958333333334,
+      "global_fixed_oracle_regret": 0.0822222222222222,
+      "compiler_oracle_regret": 0.0822222222222222,
+      "compiler_oracle_optimal_fraction": 0.1,
+      "global_fixed_oracle_optimal_fraction": 0.1
+    },
+    {
+      "held_out_learning_type": "factual_association",
+      "objective": "Factual",
+      "n_test_episodes": 20,
+      "global_fixed_mean_utility": 0.5043749999999999,
+      "compiler_mean_utility": 0.5244270833333333,
+      "oracle_mean_utility": 0.590920138888889,
+      "global_fixed_oracle_regret": 0.0865451388888889,
+      "compiler_oracle_regret": 0.0664930555555555,
+      "compiler_oracle_optimal_fraction": 0.2,
+      "global_fixed_oracle_optimal_fraction": 0.1
+    },
+    {
+      "held_out_learning_type": "lexical_binding",
+      "objective": "Lexical",
+      "n_test_episodes": 20,
+      "global_fixed_mean_utility": 0.6881944444444444,
+      "compiler_mean_utility": 0.6332118055555556,
+      "oracle_mean_utility": 0.7897569444444444,
+      "global_fixed_oracle_regret": 0.1015625,
+      "compiler_oracle_regret": 0.1565451388888888,
+      "compiler_oracle_optimal_fraction": 0.05,
+      "global_fixed_oracle_optimal_fraction": 0.1
+    },
+    {
+      "held_out_learning_type": "procedural_reasoning",
+      "objective": "Procedural",
+      "n_test_episodes": 20,
+      "global_fixed_mean_utility": 0.4493229166666667,
+      "compiler_mean_utility": 0.3634895833333333,
+      "oracle_mean_utility": 0.4501215277777778,
+      "global_fixed_oracle_regret": 0.0007986111111111,
+      "compiler_oracle_regret": 0.0866319444444444,
+      "compiler_oracle_optimal_fraction": 0.05,
+      "global_fixed_oracle_optimal_fraction": 0.95
+    },
+    {
+      "held_out_learning_type": "macro_average",
+      "objective": "Macro",
+      "n_test_episodes": 100,
+      "global_fixed_mean_utility": 0.5562951388888889,
+      "compiler_mean_utility": 0.5331909722222221,
+      "oracle_mean_utility": 0.6183159722222222,
+      "global_fixed_oracle_regret": 0.0620208333333333,
+      "compiler_oracle_regret": 0.085125,
+      "compiler_oracle_optimal_fraction": 0.14,
+      "global_fixed_oracle_optimal_fraction": 0.2799999999999999
+    }
+  ],
+  "source_guard": "LOFO figure uses lofo_summary.csv only."
+}

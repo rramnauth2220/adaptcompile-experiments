@@ -1,0 +1,13 @@
+method,method_label,outcome,outcome_label,mae,rmse
+configuration_mean,Configuration mean,acquisition,Acquisition,0.3390224999999999,0.37523396867821013
+configuration_mean,Configuration mean,transfer,Transfer,0.27312361111111116,0.32939278889344253
+configuration_mean,Configuration mean,boundedness,Boundedness,0.3342861111111111,0.37492695404827003
+configuration_mean,Configuration mean,preservation,Preservation,0.0061860763888885026,0.008346527821112091
+objective_conditioned_mean,Objective-conditioned,acquisition,Acquisition,0.07818958333333334,0.1439493183380873
+objective_conditioned_mean,Objective-conditioned,transfer,Transfer,0.07251041666666666,0.12096825561171304
+objective_conditioned_mean,Objective-conditioned,boundedness,Boundedness,0.08415625,0.12788520167360556
+objective_conditioned_mean,Objective-conditioned,preservation,Preservation,0.004097222222222295,0.00639731856322496
+primary,Primary predictor,acquisition,Acquisition,0.046155833333333264,0.09417975277804314
+primary,Primary predictor,transfer,Transfer,0.05468333333333336,0.09726547450593244
+primary,Primary predictor,boundedness,Boundedness,0.05650216876102289,0.09562989927504194
+primary,Primary predictor,preservation,Preservation,0.002745486111111034,0.0042693824319574945

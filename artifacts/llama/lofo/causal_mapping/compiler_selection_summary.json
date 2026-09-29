@@ -1,0 +1,30 @@
+{
+  "n_test_episodes": 20,
+  "selected_config_distribution": {
+    "full__all__r4": 20
+  },
+  "oracle_config_distribution": {
+    "full__all__r4": 2,
+    "late__all__r16": 3,
+    "middle__all__r16": 15
+  },
+  "global_fixed_config_id": "full__all__r4",
+  "global_fixed_tie_set": [
+    "full__all__r4"
+  ],
+  "global_fixed_train_mean_utility_by_config": {
+    "early__all__r16": 0.5067447916666667,
+    "middle__all__r16": 0.5976497395833333,
+    "late__all__r16": 0.5813704427083334,
+    "full__all__r4": 0.5984895833333334
+  },
+  "compiler_mean_utility": 0.42517361111111107,
+  "global_fixed_mean_utility": 0.42517361111111107,
+  "oracle_mean_utility": 0.5073958333333334,
+  "compiler_oracle_regret": 0.08222222222222221,
+  "global_fixed_oracle_regret": 0.08222222222222221,
+  "compiler_oracle_optimal_fraction": 0.1,
+  "global_fixed_oracle_optimal_fraction": 0.1,
+  "oracle_tie_rate": 0.0,
+  "mean_oracle_set_size": 1.0
+}

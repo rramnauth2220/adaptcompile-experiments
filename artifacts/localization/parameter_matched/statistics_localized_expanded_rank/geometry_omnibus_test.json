@@ -1,0 +1,8 @@
+{
+  "profile_definition": "[early-full, middle-full, late-full] x acquisition/transfer/boundedness",
+  "observed_geometry_heterogeneity": 0.2031616790123457,
+  "permutation_p": 9.999000099990002e-05,
+  "n_profiles": 15,
+  "n_permutations": 10000,
+  "note": "Permutation test treats objective labels as exchangeable across seed-level geometry profiles. Interpret as an omnibus diagnostic, not as a replacement for planned contrasts."
+}

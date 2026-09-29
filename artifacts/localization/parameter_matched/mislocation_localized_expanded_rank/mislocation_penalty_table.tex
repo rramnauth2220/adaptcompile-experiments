@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lllcccc}
+\toprule
+Objective & Preferred & Mislocated & Acquisition $\Delta$ & Transfer $\Delta$ & Boundedness $\Delta$ & Balanced $\Delta$ \\
+\midrule
+behavioral\_policy & late & middle & 0.031 [0.008, 0.076] & -0.073 [-0.087, -0.053] & -0.238 [-0.313, -0.167] & -0.093 [-0.131, -0.070] \\
+behavioral\_policy & middle & late & -0.031 [-0.076, -0.008] & 0.073 [0.053, 0.087] & 0.238 [0.167, 0.313] & 0.093 [0.070, 0.131] \\
+causal\_mapping & middle & early & -0.008 [-0.012, -0.004] & 0.027 [-0.047, 0.087] & 0.156 [0.133, 0.167] & 0.058 [0.036, 0.082] \\
+causal\_mapping & middle & late & 0.048 [0.028, 0.068] & 0.029 [-0.093, 0.133] & 0.053 [0.040, 0.060] & 0.043 [-0.002, 0.080] \\
+factual\_association & late & early & 0.148 [0.124, 0.180] & 0.436 [0.387, 0.460] & 0.191 [0.073, 0.287] & 0.258 [0.238, 0.271] \\
+factual\_association & late & middle & 0.125 [0.100, 0.140] & 0.271 [0.233, 0.307] & 0.096 [-0.020, 0.160] & 0.164 [0.116, 0.198] \\
+lexical\_binding & early & late & 0.183 [0.136, 0.208] & -0.022 [-0.080, 0.087] & 0.244 [0.180, 0.360] & 0.135 [0.101, 0.163] \\
+lexical\_binding & early & middle & 0.081 [0.052, 0.108] & -0.087 [-0.473, 0.160] & 0.176 [0.133, 0.200] & 0.057 [-0.063, 0.134] \\
+procedural\_reasoning & middle & early & 0.060 [-0.040, 0.156] & 0.164 [0.133, 0.193] & 0.002 [-0.413, 0.213] & 0.076 [-0.052, 0.165] \\
+procedural\_reasoning & middle & late & 0.224 [0.172, 0.268] & 0.100 [-0.033, 0.200] & -0.129 [-0.300, 0.013] & 0.065 [0.056, 0.071] \\
+\bottomrule
+\end{tabular}
+\caption{Mislocation penalties computed from localized adaptation results. Each penalty is preferred condition minus mislocated condition. Positive values indicate that respecting the objective's adaptation geometry improves performance. Intervals are bootstrap confidence intervals over paired seed-level differences.}
+\label{tab:mislocation-penalties}
+\end{table*}

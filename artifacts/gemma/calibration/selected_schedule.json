@@ -1,0 +1,65 @@
+{
+  "status": "inconclusive",
+  "reason": "No calibration condition satisfied the acquisition/transfer/boundedness/preservation gates.",
+  "selection_rule": "Choose the largest gradient_accumulation_steps value with no more than 0 failures, acquisition >= max(0.5, best - 0.05), transfer >= max(0.5, best - 0.05), boundedness >= 0.8, and preservation >= 0.8.",
+  "manual_review": {
+    "available": true,
+    "best_balanced_utility_grad_accum": 1,
+    "best_balanced_utility": 0.6362752075919336,
+    "best_acquisition_transfer_grad_accum": 1,
+    "best_acquisition_transfer_mean": 0.5433333333333333,
+    "least_update_candidate_with_transfer_at_least_0_5": 1,
+    "note": "These are diagnostics for human review only. status remains inconclusive unless a condition satisfies the configured calibration gates."
+  },
+  "candidate_summaries": [
+    {
+      "grad_accum": 1,
+      "acquisition": 0.56,
+      "transfer": 0.5266666666666666,
+      "boundedness": 0.46,
+      "preservation": 0.9984341637010676,
+      "balanced_utility": 0.6362752075919336,
+      "number_of_episodes": 25,
+      "observed_episode_program_seed_units": 25,
+      "expected_episode_program_seed_units": 25,
+      "failures": 0
+    },
+    {
+      "grad_accum": 2,
+      "acquisition": 0.316,
+      "transfer": 0.36,
+      "boundedness": 0.4,
+      "preservation": 0.9984341637010676,
+      "balanced_utility": 0.518608540925267,
+      "number_of_episodes": 25,
+      "observed_episode_program_seed_units": 25,
+      "expected_episode_program_seed_units": 25,
+      "failures": 0
+    },
+    {
+      "grad_accum": 4,
+      "acquisition": 0.168,
+      "transfer": 0.20666666666666664,
+      "boundedness": 0.22,
+      "preservation": 0.9984341637010676,
+      "balanced_utility": 0.3982752075919336,
+      "number_of_episodes": 25,
+      "observed_episode_program_seed_units": 25,
+      "expected_episode_program_seed_units": 25,
+      "failures": 0
+    },
+    {
+      "grad_accum": 8,
+      "acquisition": 0.068,
+      "transfer": 0.18,
+      "boundedness": 0.21333333333333332,
+      "preservation": 0.9984341637010676,
+      "balanced_utility": 0.36494187425860025,
+      "number_of_episodes": 25,
+      "observed_episode_program_seed_units": 25,
+      "expected_episode_program_seed_units": 25,
+      "failures": 0
+    }
+  ],
+  "source_warning": "Raw ga_*/runs/evaluation.jsonl files were not found; using cached artifacts/gemma/calibration\\calibration_runs.csv. If this CSV was produced by an older summarizer, preservation_source_file may not identify the correct GA-specific preservation file."
+}

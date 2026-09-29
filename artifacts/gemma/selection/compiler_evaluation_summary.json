@@ -1,0 +1,18 @@
+{
+  "n_episode_seed_groups": 100,
+  "mean_selected_observed_utility": 0.43531366152629497,
+  "mean_oracle_observed_utility": 0.4614634242783709,
+  "mean_oracle_regret": 0.026149762752075912,
+  "exact_top1_recovery_rate": 0.42,
+  "oracle_recovery_rate": 0.42,
+  "top_k_recovery_rate": 0.73,
+  "mean_oracle_set_size": 1.02,
+  "utility_weights": {
+    "acquisition": 1.0,
+    "transfer": 1.0,
+    "boundedness": 1.0,
+    "preservation": 1.0
+  },
+  "max_parameter_cost": null,
+  "tie_tolerance": 1e-12
+}

@@ -1,0 +1,55 @@
+{
+  "script": "scripts/reproduce/compiler/make_exp4_ablation_by_objective_table.py",
+  "input_files": [
+    "artifacts/llama/ablations/episode\\predictions_test.csv",
+    "artifacts/llama/ablations/episode\\prediction_metrics.json",
+    "artifacts/llama/ablations/episode\\ranking_metrics.json",
+    "artifacts/llama/ablations/episode\\model_metadata.json",
+    "artifacts/llama/prediction\\predictions_test.csv",
+    "artifacts/llama/prediction\\prediction_metrics.json",
+    "artifacts/llama/prediction\\ranking_metrics.json",
+    "artifacts/llama/prediction\\model_metadata.json",
+    "artifacts/llama/ablations/module_probes\\predictions_test.csv",
+    "artifacts/llama/ablations/module_probes\\prediction_metrics.json",
+    "artifacts/llama/ablations/module_probes\\ranking_metrics.json",
+    "artifacts/llama/ablations/module_probes\\model_metadata.json",
+    "artifacts/llama/ablations/frozen_behavior\\predictions_test.csv",
+    "artifacts/llama/ablations/frozen_behavior\\prediction_metrics.json",
+    "artifacts/llama/ablations/frozen_behavior\\ranking_metrics.json",
+    "artifacts/llama/ablations/frozen_behavior\\model_metadata.json"
+  ],
+  "git_commit": "40905b4987279660e68683654f9b86d1dd19097a",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "table": "exp4_ablation_by_objective",
+  "output_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp4_ablation_by_objective.csv",
+  "output_markdown": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp4_ablation_by_objective.md",
+  "columns": [
+    "Objective",
+    "Episode MAE",
+    "Full MAE",
+    "Probe MAE",
+    "Frozen MAE",
+    "Episode Regret",
+    "Full Regret",
+    "Probe Regret",
+    "Frozen Regret"
+  ],
+  "metric_definitions": {
+    "MAE": "Mean absolute error over acquisition, transfer, boundedness, and preservation for held-out test episode-program rows within the objective.",
+    "Regret": "Mean held-out episode oracle regret from the tie-aware primary predicted-utility selector."
+  },
+  "data_integrity_checks": {
+    "same_held_out_test_episodes": true,
+    "same_candidate_programs": [
+      "early__all__r16",
+      "middle__all__r16",
+      "late__all__r16",
+      "full__all__r4"
+    ],
+    "same_seed_averaged_test_geometry": true,
+    "validation_selection_metadata_present": true,
+    "full_auto_is_primary_representation": true,
+    "sanity_values_within_tolerance": 0.002
+  }
+}

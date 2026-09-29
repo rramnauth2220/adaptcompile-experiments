@@ -1,0 +1,207 @@
+{
+  "experiment": "experiment2_geometry_prediction",
+  "feature_set": "frozen_behavior",
+  "model_type": "random_forest",
+  "candidate_model_types": [
+    "ridge",
+    "random_forest"
+  ],
+  "selected_hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "random_state": 2026,
+    "n_jobs": 1
+  },
+  "validation_model_selection_results": [
+    {
+      "model_type": "ridge",
+      "alpha": 0.0,
+      "validation_mean_mae": 0.20576017293740048
+    },
+    {
+      "model_type": "ridge",
+      "alpha": 0.01,
+      "validation_mean_mae": 0.20576195418678386
+    },
+    {
+      "model_type": "ridge",
+      "alpha": 0.1,
+      "validation_mean_mae": 0.20577788092095511
+    },
+    {
+      "model_type": "ridge",
+      "alpha": 1.0,
+      "validation_mean_mae": 0.20595061814027815
+    },
+    {
+      "model_type": "ridge",
+      "alpha": 10.0,
+      "validation_mean_mae": 0.20758773719799498
+    },
+    {
+      "model_type": "ridge",
+      "alpha": 100.0,
+      "validation_mean_mae": 0.2119321681239119
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.056366258680555566
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.05823948654687325
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_leaf": 4,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.06314444806839865
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 100,
+      "max_depth": 6,
+      "min_samples_leaf": 1,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.10190850698705414
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 100,
+      "max_depth": 6,
+      "min_samples_leaf": 2,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.10199682999079417
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 100,
+      "max_depth": 6,
+      "min_samples_leaf": 4,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.10205062996871005
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 300,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.05630665385251327
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 300,
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.05811494989963743
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 300,
+      "max_depth": null,
+      "min_samples_leaf": 4,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.06318809663322665
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 300,
+      "max_depth": 6,
+      "min_samples_leaf": 1,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.10118054563850136
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 300,
+      "max_depth": 6,
+      "min_samples_leaf": 2,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.10128582803854216
+    },
+    {
+      "model_type": "random_forest",
+      "n_estimators": 300,
+      "max_depth": 6,
+      "min_samples_leaf": 4,
+      "random_state": 2026,
+      "n_jobs": 1,
+      "validation_mean_mae": 0.10138765475040165
+    }
+  ],
+  "train_rows": 1600,
+  "validation_rows": 400,
+  "test_rows": 400,
+  "train_episodes": 400,
+  "validation_episodes": 100,
+  "test_episodes": 100,
+  "config_ids": [
+    "early__all__r16",
+    "middle__all__r16",
+    "late__all__r16",
+    "full__all__r4"
+  ],
+  "random_seed": 2026,
+  "geometry_source_path": "artifacts/llama/geometry/geometry_dataset.csv",
+  "feature_source_path": "external/not-shipped",
+  "config_library": "data/compiler/config_library.jsonl",
+  "feature_names": [
+    "episode__frozen_target_token_loss_max",
+    "episode__frozen_target_token_loss_mean",
+    "episode__frozen_target_token_loss_min",
+    "episode__frozen_target_token_loss_std",
+    "config__module_family__all",
+    "config__module_family__attention",
+    "config__module_family__mlp",
+    "config__module_family__custom",
+    "config__is_full_stack",
+    "config__is_localized",
+    "config__n_layers_adapted",
+    "config__fraction_layers_adapted",
+    "config__depth_mean",
+    "config__depth_std",
+    "config__depth_min",
+    "config__depth_max",
+    "config__fraction_modules_selected",
+    "config__lora_r",
+    "config__lora_alpha",
+    "config__lora_dropout",
+    "config__approximate_parameter_cost"
+  ],
+  "feature_standardizer_path": "artifacts/llama/ablations/frozen_behavior/feature_standardizer.json",
+  "objective_identity_used_in_primary_predictor": false,
+  "objective_conditioned_mean_is_diagnostic_only": true,
+  "representation_metadata": {
+    "episode_representation_backend": "frozen_hidden_state_projection",
+    "episode_representation_source_layer": -1,
+    "episode_representation_token_pooling": "mean over target tokens",
+    "episode_representation_episode_pooling": "mean over adaptation examples",
+    "episode_representation_projection_dim": 128,
+    "episode_representation_projection_seed": 2471252956
+  },
+  "git_commit": "46f772342e471ec5ee3216a601b5b344cd888dd6"
+}

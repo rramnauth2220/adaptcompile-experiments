@@ -1,0 +1,22 @@
+{
+  "configuration_mean": {
+    "mean_episode_spearman": -0.3400000000000001,
+    "pairwise_ranking_accuracy": 0.3666666666666666,
+    "top1_set_oracle_recovery": 0.1,
+    "top2_set_oracle_recovery": 0.1,
+    "top1_set_fractional_oracle_credit": 0.1,
+    "top2_set_fractional_oracle_credit": 0.05,
+    "selected_config_oracle_optimal": 0.1,
+    "n_episodes": 20
+  },
+  "primary": {
+    "mean_episode_spearman": -0.55,
+    "pairwise_ranking_accuracy": 0.2583333333333333,
+    "top1_set_oracle_recovery": 0.05,
+    "top2_set_oracle_recovery": 0.15,
+    "top1_set_fractional_oracle_credit": 0.05,
+    "top2_set_fractional_oracle_credit": 0.075,
+    "selected_config_oracle_optimal": 0.05,
+    "n_episodes": 20
+  }
+}

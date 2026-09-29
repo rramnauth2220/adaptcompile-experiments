@@ -1,0 +1,53 @@
+{
+  "config_ids": [
+    "early__all__r16",
+    "middle__all__r16",
+    "late__all__r16",
+    "full__all__r4"
+  ],
+  "n_rows": 2400,
+  "n_episode_config_units": 2400,
+  "episode_counts_by_split": {
+    "test": 100,
+    "train": 400,
+    "validation": 100
+  },
+  "complete_episode_counts_by_split": {
+    "test": 100,
+    "train": 400,
+    "validation": 100
+  },
+  "rows_by_split_config": {
+    "test": {
+      "early__all__r16": 100,
+      "full__all__r4": 100,
+      "late__all__r16": 100,
+      "middle__all__r16": 100
+    },
+    "train": {
+      "early__all__r16": 400,
+      "full__all__r4": 400,
+      "late__all__r16": 400,
+      "middle__all__r16": 400
+    },
+    "validation": {
+      "early__all__r16": 100,
+      "full__all__r4": 100,
+      "late__all__r16": 100,
+      "middle__all__r16": 100
+    }
+  },
+  "seed_count_distribution_by_split": {
+    "test": {
+      "3": 400
+    },
+    "train": {
+      "1": 1600
+    },
+    "validation": {
+      "1": 400
+    }
+  },
+  "n_incomplete_episodes": 0,
+  "incomplete_episodes": []
+}

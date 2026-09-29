@@ -1,0 +1,5 @@
+config_id,label,fractional_count,fractional_rate,membership_count,unique_winner_count
+early__all__r16,Early,6.0,0.06,7,5
+middle__all__r16,Middle,31.0,0.31,32,30
+late__all__r16,Late,23.0,0.23,23,23
+full__all__r4,Full-r4,40.0,0.4,40,40

@@ -1,0 +1,148 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_utility_specs.py",
+  "input_files": [
+    "artifacts/llama/geometry/geometry_dataset.csv",
+    "artifacts/llama/selection/utility_specs/balanced.csv",
+    "artifacts/llama/selection/utility_specs/balanced.csv",
+    "artifacts/llama/selection/utility_specs/balanced.json",
+    "artifacts/llama/selection/utility_specs/transfer_heavy.csv",
+    "artifacts/llama/selection/utility_specs/transfer_heavy.json",
+    "artifacts/llama/selection/utility_specs/boundedness_heavy.csv",
+    "artifacts/llama/selection/utility_specs/boundedness_heavy.json",
+    "artifacts/llama/selection/utility_specs/preservation_heavy.csv",
+    "artifacts/llama/selection/utility_specs/preservation_heavy.json"
+  ],
+  "git_commit": "53b73bfaa0cd3a4fe91ac8a1fdda1be1742814f5",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "regret_summary": [
+    {
+      "utility_spec": "balanced",
+      "utility_label": "Balanced",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.04921527777777778,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "balanced",
+      "utility_label": "Balanced",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.018423611111111106,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "balanced",
+      "utility_label": "Balanced",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.011260416666666667,
+      "top1_recovery": 0.77,
+      "top2_recovery": 0.93
+    },
+    {
+      "utility_spec": "transfer_heavy",
+      "utility_label": "Transfer",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.04184444444444445,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "transfer_heavy",
+      "utility_label": "Transfer",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.02465555555555556,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "transfer_heavy",
+      "utility_label": "Transfer",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.011494444444444448,
+      "top1_recovery": 0.74,
+      "top2_recovery": 0.93
+    },
+    {
+      "utility_spec": "boundedness_heavy",
+      "utility_label": "Bounded-\nness",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.07632500000000002,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "boundedness_heavy",
+      "utility_label": "Bounded-\nness",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.02468055555555555,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "boundedness_heavy",
+      "utility_label": "Bounded-\nness",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.0039027777777777776,
+      "top1_recovery": 0.81,
+      "top2_recovery": 0.98
+    },
+    {
+      "utility_spec": "preservation_heavy",
+      "utility_label": "Preser-\nvation",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.04086666666666666,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "preservation_heavy",
+      "utility_label": "Preser-\nvation",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.014888888888888889,
+      "top1_recovery": null,
+      "top2_recovery": null
+    },
+    {
+      "utility_spec": "preservation_heavy",
+      "utility_label": "Preser-\nvation",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.00905555555555556,
+      "top1_recovery": 0.75,
+      "top2_recovery": 0.93
+    }
+  ],
+  "switching_summary": [
+    {
+      "utility_spec": "transfer_heavy",
+      "utility_label": "Transfer",
+      "n_episodes": 100,
+      "fraction_changed_vs_balanced": 0.14
+    },
+    {
+      "utility_spec": "boundedness_heavy",
+      "utility_label": "Bounded-\nness",
+      "n_episodes": 100,
+      "fraction_changed_vs_balanced": 0.13
+    },
+    {
+      "utility_spec": "preservation_heavy",
+      "utility_label": "Preser-\nvation",
+      "n_episodes": 100,
+      "fraction_changed_vs_balanced": 0.01
+    }
+  ]
+}

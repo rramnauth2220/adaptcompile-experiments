@@ -1,0 +1,14 @@
+{
+  "script": "scripts/reproduce/plot_exp6_gemma.py",
+  "input_files": [
+    "artifacts/gemma/calibration\\calibration_summary.csv",
+    "artifacts/gemma/geometry/geometry_dataset.csv",
+    "artifacts/gemma/prediction\\predictions_test.csv",
+    "artifacts/gemma/selection\\compiler_evaluation.csv"
+  ],
+  "git_commit": "407b2953b879ac87b09a3ed1e66cc86907efbbc7",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "compiler_top2_oracle_recovery": 0.73,
+  "n_test_episodes": 100
+}

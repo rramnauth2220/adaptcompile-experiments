@@ -1,0 +1,11 @@
+-r requirements-analysis.txt
+
+# Exact producing-environment versions were not recoverable from repository
+# metadata. Keep the pre-existing Transformers compatibility floor and validate
+# this stack in the intended CUDA environment before model-backed reproduction.
+torch
+transformers>=4.40.0
+datasets
+accelerate
+peft
+tqdm

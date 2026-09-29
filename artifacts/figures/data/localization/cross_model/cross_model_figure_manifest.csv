@@ -1,0 +1,16 @@
+figure,path,format
+cross_model_full_stack_performance.svg,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_full_stack_performance.svg,svg
+cross_model_delta_geometry_heatmap.svg,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_delta_geometry_heatmap.svg,svg
+cross_model_best_region_agreement.svg,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_best_region_agreement.svg,svg
+cross_model_primary_mislocation.svg,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_primary_mislocation.svg,svg
+cross_model_similarity_variance.svg,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_similarity_variance.svg,svg
+cross_model_full_stack_performance.png,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_full_stack_performance.png,png
+cross_model_full_stack_performance.pdf,artifacts/<ARCHIVE_ROOT>/figures/appendix/localization/cross_model/cross_model_full_stack_performance.pdf,pdf
+cross_model_delta_geometry_heatmap.png,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_delta_geometry_heatmap.png,png
+cross_model_delta_geometry_heatmap.pdf,artifacts/<ARCHIVE_ROOT>/figures/appendix/localization/cross_model/cross_model_delta_geometry_heatmap.pdf,pdf
+cross_model_best_region_agreement.png,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_best_region_agreement.png,png
+cross_model_best_region_agreement.pdf,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_best_region_agreement.pdf,pdf
+cross_model_primary_mislocation.png,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_primary_mislocation.png,png
+cross_model_primary_mislocation.pdf,artifacts/<ARCHIVE_ROOT>/figures/appendix/localization/cross_model/cross_model_primary_mislocation.pdf,pdf
+cross_model_similarity_variance.png,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_similarity_variance.png,png
+cross_model_similarity_variance.pdf,<ARCHIVE_ROOT>/results/cross_model_localization/<ARCHIVE_ROOT>/figures/cross_model_similarity_variance.pdf,pdf

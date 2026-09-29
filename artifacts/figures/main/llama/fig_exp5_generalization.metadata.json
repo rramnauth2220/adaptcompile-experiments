@@ -1,0 +1,26 @@
+{
+  "script": "scripts/reproduce/compiler/plot_exp5_generalization.py",
+  "input_files": [
+    "artifacts/llama/prediction\\predictions_test.csv",
+    "artifacts/llama/prediction\\model_metadata.json",
+    "artifacts/llama/lofo\\lofo_summary.csv",
+    "artifacts/llama/lofo\\*\\model_metadata.json"
+  ],
+  "git_commit": "b8409a714279e6c130a4bf0cdd3ab17afcbca30b",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "figure": "Experiment 5 main generalization figure",
+  "panel_a_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp5_generalization_panel_a.csv",
+  "panel_b_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp5_generalization_panel_b.csv",
+  "sanity_checks": {
+    "represented_macro_geometry_mae": 0.04002170538470014,
+    "lofo_macro_geometry_mae": 0.3391765248842592,
+    "lofo_macro_compiler_regret": 0.085125,
+    "lofo_macro_global_regret": 0.0620208333333333
+  },
+  "source_guard": {
+    "represented_family": "final ordinary held-out Experiment 2 full_auto predictions",
+    "lofo": "final episode-only leave-one-family-out summary and fold metadata",
+    "existing_lofo_detail_figure_preserved": "artifacts/<ARCHIVE_ROOT>/figures/appendix/llama/fig_lofo_generalization.pdf"
+  }
+}

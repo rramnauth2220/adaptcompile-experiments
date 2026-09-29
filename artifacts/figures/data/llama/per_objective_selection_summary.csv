@@ -1,0 +1,16 @@
+learning_type,objective,selector,selector_label,oracle_regret,top1_oracle_recovery,mean_utility,n_episodes
+behavioral_policy,Behavioral,global_fixed,Global fixed,0.038975694444444445,0.15,0.7144097222222221,20
+behavioral_policy,Behavioral,objective_fixed,Objective fixed,0.006788194444444423,0.45,0.7465972222222222,20
+behavioral_policy,Behavioral,compiler,Compiler,0.0006249999999999867,0.7,0.7527604166666666,20
+causal_mapping,Causal,global_fixed,Global fixed,0.018194444444444444,0.75,0.4892013888888888,20
+causal_mapping,Causal,objective_fixed,Objective fixed,0.018194444444444444,0.75,0.4892013888888888,20
+causal_mapping,Causal,compiler,Compiler,0.00385416666666667,0.9,0.5035416666666667,20
+factual_association,Factual,global_fixed,Global fixed,0.08654513888888893,0.1,0.5043749999999999,20
+factual_association,Factual,objective_fixed,Objective fixed,0.027395833333333324,0.4,0.5635243055555555,20
+factual_association,Factual,compiler,Compiler,0.00590277777777779,0.65,0.5850173611111109,20
+lexical_binding,Lexical,global_fixed,Global fixed,0.1015625,0.1,0.6881944444444443,20
+lexical_binding,Lexical,objective_fixed,Objective fixed,0.038940972222222224,0.65,0.7508159722222222,20
+lexical_binding,Lexical,compiler,Compiler,0.043836805555555566,0.65,0.7459201388888889,20
+procedural_reasoning,Procedural,global_fixed,Global fixed,0.0007986111111111082,0.95,0.44932291666666674,20
+procedural_reasoning,Procedural,objective_fixed,Objective fixed,0.0007986111111111082,0.95,0.44932291666666674,20
+procedural_reasoning,Procedural,compiler,Compiler,0.0020833333333333676,0.95,0.4480381944444445,20

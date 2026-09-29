@@ -1,0 +1,28 @@
+{
+  "script": "scripts/reproduce/plot_compilation_scope.py",
+  "input_files": [
+    "artifacts/llama/ablations/episode\\predictions_test.csv",
+    "artifacts/llama/prediction\\predictions_test.csv",
+    "artifacts/llama/ablations/module_probes\\predictions_test.csv",
+    "artifacts/llama/ablations/frozen_behavior\\predictions_test.csv",
+    "artifacts/llama/geometry/geometry_dataset.csv",
+    "artifacts/llama/selection\\compiler_evaluation.csv",
+    "artifacts/llama/lofo\\lofo_summary.csv",
+    "artifacts/llama/lofo\\behavioral_policy\\compiler_selection.csv",
+    "artifacts/llama/lofo\\behavioral_policy\\model_metadata.json",
+    "artifacts/llama/lofo\\causal_mapping\\compiler_selection.csv",
+    "artifacts/llama/lofo\\causal_mapping\\model_metadata.json",
+    "artifacts/llama/lofo\\factual_association\\compiler_selection.csv",
+    "artifacts/llama/lofo\\factual_association\\model_metadata.json",
+    "artifacts/llama/lofo\\lexical_binding\\compiler_selection.csv",
+    "artifacts/llama/lofo\\lexical_binding\\model_metadata.json",
+    "artifacts/llama/lofo\\procedural_reasoning\\compiler_selection.csv",
+    "artifacts/llama/lofo\\procedural_reasoning\\model_metadata.json",
+    "artifacts/gemma/geometry/geometry_dataset.csv",
+    "artifacts/gemma/selection\\compiler_evaluation.csv"
+  ],
+  "git_commit": "407b2953b879ac87b09a3ed1e66cc86907efbbc7",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "tie_tolerance": 1e-12
+}

@@ -1,0 +1,11 @@
+{
+  "n_profiles": 75,
+  "total_variance_ss": 34.143335632592596,
+  "objective_explained_ss": 8.539002358518518,
+  "model_explained_ss": 11.678768402962962,
+  "residual_interaction_proxy_ss": 13.925564871111117,
+  "objective_explained_ratio": 0.25009279850113253,
+  "model_explained_ratio": 0.34205118470658813,
+  "key_question_answer": "model",
+  "note": "Descriptive additive sum-of-squares proxy over DeltaG profile dimensions."
+}

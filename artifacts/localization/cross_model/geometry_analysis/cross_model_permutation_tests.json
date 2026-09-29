@@ -1,0 +1,12 @@
+{
+  "objective_label_permutation": {
+    "observed_stat": 8.539002358518518,
+    "p_value": 9.999000099990002e-05,
+    "n_perm": 10000
+  },
+  "model_label_permutation": {
+    "observed_stat": 11.678768402962962,
+    "p_value": 9.999000099990002e-05,
+    "n_perm": 10000
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_representation_ablation.py",
+  "input_files": [
+    "artifacts/llama/ablations/episode/prediction_metrics.json",
+    "artifacts/llama/ablations/episode/ranking_metrics.json",
+    "artifacts/llama/ablations/episode/predictions_test.csv",
+    "artifacts/llama/prediction/prediction_metrics.json",
+    "artifacts/llama/prediction/ranking_metrics.json",
+    "artifacts/llama/prediction/predictions_test.csv",
+    "artifacts/llama/ablations/module_probes/prediction_metrics.json",
+    "artifacts/llama/ablations/module_probes/ranking_metrics.json",
+    "artifacts/llama/ablations/module_probes/predictions_test.csv",
+    "artifacts/llama/ablations/frozen_behavior/prediction_metrics.json",
+    "artifacts/llama/ablations/frozen_behavior/ranking_metrics.json",
+    "artifacts/llama/ablations/frozen_behavior/predictions_test.csv"
+  ],
+  "git_commit": "53b73bfaa0cd3a4fe91ac8a1fdda1be1742814f5",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "summary": [
+    {
+      "feature_dir": "ablation_episode",
+      "feature_set": "Episode",
+      "mean_mae": 0.03987211970899465,
+      "utility_correlation": 0.9633289666324231,
+      "mean_episode_spearman": 0.8478113883008419,
+      "pairwise_ranking_accuracy": 0.8983333333333333,
+      "top1_oracle_recovery": 0.83,
+      "top2_oracle_recovery": 0.96,
+      "selected_mean_utility": 0.6094826388888888,
+      "oracle_mean_utility": 0.6183159722222222,
+      "compiler_oracle_regret": 0.008833333333333334
+    },
+    {
+      "feature_dir": "full_auto",
+      "feature_set": "Full",
+      "mean_mae": 0.04002170538470011,
+      "utility_correlation": 0.9620084689542299,
+      "mean_episode_spearman": 0.8026491106406735,
+      "pairwise_ranking_accuracy": 0.8749999999999999,
+      "top1_oracle_recovery": 0.77,
+      "top2_oracle_recovery": 0.93,
+      "selected_mean_utility": 0.6070555555555555,
+      "oracle_mean_utility": 0.6183159722222222,
+      "compiler_oracle_regret": 0.01126041666666667
+    },
+    {
+      "feature_dir": "ablation_module_probes",
+      "feature_set": "Module\nprobes",
+      "mean_mae": 0.05301480144951492,
+      "utility_correlation": 0.9347982880927908,
+      "mean_episode_spearman": 0.7654868329805052,
+      "pairwise_ranking_accuracy": 0.86,
+      "top1_oracle_recovery": 0.74,
+      "top2_oracle_recovery": 0.89,
+      "selected_mean_utility": 0.6042430555555555,
+      "oracle_mean_utility": 0.6183159722222222,
+      "compiler_oracle_regret": 0.014072916666666671
+    },
+    {
+      "feature_dir": "ablation_frozen_behavior",
+      "feature_set": "Frozen\nbehavior",
+      "mean_mae": 0.053847062114197534,
+      "utility_correlation": 0.9175846799816679,
+      "mean_episode_spearman": 0.7406491106406734,
+      "pairwise_ranking_accuracy": 0.8399999999999999,
+      "top1_oracle_recovery": 0.71,
+      "top2_oracle_recovery": 0.91,
+      "selected_mean_utility": 0.5997395833333333,
+      "oracle_mean_utility": 0.6183159722222222,
+      "compiler_oracle_regret": 0.01857638888888889
+    }
+  ],
+  "top1_annotations": "Percent labels show primary top-1 oracle recovery."
+}

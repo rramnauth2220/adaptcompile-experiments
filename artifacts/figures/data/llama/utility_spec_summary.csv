@@ -1,0 +1,24 @@
+utility_spec,utility_label,selector,selector_label,oracle_regret,top1_recovery,top2_recovery,n_episodes,fraction_changed_vs_balanced
+balanced,Balanced,global_fixed,Global fixed,0.04921527777777778,,,,
+balanced,Balanced,objective_fixed,Objective fixed,0.018423611111111106,,,,
+balanced,Balanced,compiler,Compiler,0.011260416666666667,0.77,0.93,,
+transfer_heavy,Transfer,global_fixed,Global fixed,0.04184444444444445,,,,
+transfer_heavy,Transfer,objective_fixed,Objective fixed,0.02465555555555556,,,,
+transfer_heavy,Transfer,compiler,Compiler,0.011494444444444448,0.74,0.93,,
+boundedness_heavy,"Bounded-
+ness",global_fixed,Global fixed,0.07632500000000002,,,,
+boundedness_heavy,"Bounded-
+ness",objective_fixed,Objective fixed,0.02468055555555555,,,,
+boundedness_heavy,"Bounded-
+ness",compiler,Compiler,0.0039027777777777776,0.81,0.98,,
+preservation_heavy,"Preser-
+vation",global_fixed,Global fixed,0.04086666666666666,,,,
+preservation_heavy,"Preser-
+vation",objective_fixed,Objective fixed,0.014888888888888889,,,,
+preservation_heavy,"Preser-
+vation",compiler,Compiler,0.00905555555555556,0.75,0.93,,
+transfer_heavy,Transfer,,,,,,100.0,0.14
+boundedness_heavy,"Bounded-
+ness",,,,,,100.0,0.13
+preservation_heavy,"Preser-
+vation",,,,,,100.0,0.01

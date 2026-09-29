@@ -1,0 +1,164 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_exp1_margins.py",
+  "input_files": [
+    "artifacts/llama/geometry/geometry_dataset.csv",
+    "artifacts/llama/geometry/headroom\\headroom_top2_margins.csv"
+  ],
+  "git_commit": "b8409a714279e6c130a4bf0cdd3ab17afcbca30b",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "figure": "A1 oracle winner margins",
+  "definition": "best balanced utility minus second-best balanced utility over the four primary configs",
+  "utility": "mean(acquisition, transfer, boundedness, preservation)",
+  "n_bootstrap": 20000,
+  "n_test_episodes": 100,
+  "summary_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp1_margins_summary.csv",
+  "summary": [
+    {
+      "group_type": "overall",
+      "group_value": "all",
+      "learning_type": "",
+      "objective": "Overall",
+      "n_episodes": 100,
+      "top2_margin_mean": 0.053670138888888885,
+      "top2_margin_ci_low": 0.04492708333333334,
+      "top2_margin_ci_high": 0.06275017361111108,
+      "top2_margin_median": 0.04079861111111116,
+      "top2_margin_sd": 0.045826271833626635,
+      "top2_margin_min": 0.0,
+      "top2_margin_max": 0.17708333333333337,
+      "tie_rate": 0.01,
+      "unique_winner_rate": 0.99
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "behavioral_policy",
+      "learning_type": "behavioral_policy",
+      "objective": "Behavioral",
+      "n_episodes": 20,
+      "top2_margin_mean": 0.01564236111111107,
+      "top2_margin_ci_low": 0.007934027777777741,
+      "top2_margin_ci_high": 0.02453124999999995,
+      "top2_margin_median": 0.007291666666666585,
+      "top2_margin_sd": 0.019680414398892062,
+      "top2_margin_min": 0.0003472222222221655,
+      "top2_margin_max": 0.06770833333333326,
+      "tie_rate": 0.0,
+      "unique_winner_rate": 1.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "causal_mapping",
+      "learning_type": "causal_mapping",
+      "objective": "Causal",
+      "n_episodes": 20,
+      "top2_margin_mean": 0.07201388888888889,
+      "top2_margin_ci_low": 0.05123263888888888,
+      "top2_margin_ci_high": 0.09395833333333332,
+      "top2_margin_median": 0.05868055555555554,
+      "top2_margin_sd": 0.049698494983965204,
+      "top2_margin_min": 0.00347222222222221,
+      "top2_margin_max": 0.16319444444444448,
+      "tie_rate": 0.0,
+      "unique_winner_rate": 1.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "factual_association",
+      "learning_type": "factual_association",
+      "objective": "Factual",
+      "n_episodes": 20,
+      "top2_margin_mean": 0.04456597222222222,
+      "top2_margin_ci_low": 0.026232204861111105,
+      "top2_margin_ci_high": 0.06413237847222218,
+      "top2_margin_median": 0.023437500000000056,
+      "top2_margin_sd": 0.04443220360374845,
+      "top2_margin_min": 0.0,
+      "top2_margin_max": 0.12291666666666656,
+      "tie_rate": 0.05,
+      "unique_winner_rate": 0.95
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "lexical_binding",
+      "learning_type": "lexical_binding",
+      "objective": "Lexical",
+      "n_episodes": 20,
+      "top2_margin_mean": 0.07737847222222224,
+      "top2_margin_ci_low": 0.05647569444444449,
+      "top2_margin_ci_high": 0.09890625,
+      "top2_margin_median": 0.07586805555555559,
+      "top2_margin_sd": 0.04982968716797042,
+      "top2_margin_min": 0.006944444444444642,
+      "top2_margin_max": 0.17708333333333337,
+      "tie_rate": 0.0,
+      "unique_winner_rate": 1.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "procedural_reasoning",
+      "learning_type": "procedural_reasoning",
+      "objective": "Procedural",
+      "n_episodes": 20,
+      "top2_margin_mean": 0.05874999999999999,
+      "top2_margin_ci_low": 0.04524305555555555,
+      "top2_margin_ci_high": 0.07286458333333336,
+      "top2_margin_median": 0.052604166666666674,
+      "top2_margin_sd": 0.03233214073582825,
+      "top2_margin_min": 0.015972222222222165,
+      "top2_margin_max": 0.12569444444444444,
+      "tie_rate": 0.0,
+      "unique_winner_rate": 1.0
+    }
+  ],
+  "saved_headroom_comparison": [
+    {
+      "group_type": "overall",
+      "group_value": "all",
+      "mean_difference": 8.326672684688674e-17,
+      "median_difference": 6.245004513516506e-17,
+      "tie_rate_difference": 0.0,
+      "unique_winner_rate_difference": 0.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "behavioral_policy",
+      "mean_difference": 6.938893903907228e-17,
+      "median_difference": 8.500145032286355e-17,
+      "tie_rate_difference": 0.0,
+      "unique_winner_rate_difference": 0.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "causal_mapping",
+      "mean_difference": 9.71445146547012e-17,
+      "median_difference": 4.163336342344337e-17,
+      "tie_rate_difference": 0.0,
+      "unique_winner_rate_difference": 0.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "factual_association",
+      "mean_difference": 2.0816681711721685e-17,
+      "median_difference": 5.551115123125783e-17,
+      "tie_rate_difference": 0.0,
+      "unique_winner_rate_difference": 0.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "lexical_binding",
+      "mean_difference": 4.163336342344337e-17,
+      "median_difference": 9.71445146547012e-17,
+      "tie_rate_difference": 0.0,
+      "unique_winner_rate_difference": 0.0
+    },
+    {
+      "group_type": "learning_type",
+      "group_value": "procedural_reasoning",
+      "mean_difference": -6.938893903907228e-18,
+      "median_difference": -2.7755575615628914e-17,
+      "tie_rate_difference": 0.0,
+      "unique_winner_rate_difference": 0.0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+section,n_episodes,n_configs,n_episode_config_units,seeds,mean_utility_sd,median_utility_sd,mean_utility_range,config_id,program,mean_utility_sd_ci_low,mean_utility_sd_ci_high,same_unique_winner_count,same_unique_winner_rate,common_oracle_count,common_oracle_rate,learning_type,objective,global_utility_mean,objective_fixed_utility_mean,oracle_utility_mean,objective_to_oracle_regret_mean,top2_margin_mean,top2_margin_median
+overall_seed_variation,20.0,4.0,80.0,11|22|33,0.028391275254802874,0.0220658854279123,0.05296874999999997,,,,,,,,,,,,,,,,
+seed_variation_by_program,,,20.0,,0.023289123922536435,0.0012028130608117,0.04380208333333331,early__all__r16,Early,0.007942128608399001,0.043454759602247206,,,,,,,,,,,,
+seed_variation_by_program,,,20.0,,0.026647493633663803,0.024209396820123852,0.048749999999999946,middle__all__r16,Middle,0.02013625239799244,0.033660718130197435,,,,,,,,,,,,
+seed_variation_by_program,,,20.0,,0.036764899490074845,0.02298588116009825,0.06874999999999996,late__all__r16,Late,0.02145602966297791,0.05473758126312066,,,,,,,,,,,,
+seed_variation_by_program,,,20.0,,0.026863583972936433,0.0223362896082216,0.050572916666666634,full__all__r4,Full-r4,0.014166957605485224,0.0414832937506968,,,,,,,,,,,,
+overall_winner_stability,20.0,,,,,,,,,,,8.0,0.4,11.0,0.55,,,,,,,,
+winner_stability_by_objective,4.0,,,,,,,,,,,1.0,0.25,3.0,0.75,behavioral_policy,Behavioral,,,,,,
+winner_stability_by_objective,4.0,,,,,,,,,,,3.0,0.75,3.0,0.75,causal_mapping,Causal,,,,,,
+winner_stability_by_objective,4.0,,,,,,,,,,,0.0,0.0,1.0,0.25,factual_association,Factual,,,,,,
+winner_stability_by_objective,4.0,,,,,,,,,,,1.0,0.25,1.0,0.25,lexical_binding,Lexical,,,,,,
+winner_stability_by_objective,4.0,,,,,,,,,,,3.0,0.75,3.0,0.75,procedural_reasoning,Procedural,,,,,,
+seed_averaged_headroom,20.0,,,,,,,,,,,,,,,,,0.5807291666666667,0.6046875,0.6211111111111112,0.016423611111111097,0.0531944444444444,0.0352430555555555

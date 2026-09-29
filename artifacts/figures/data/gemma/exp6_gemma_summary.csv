@@ -1,0 +1,26 @@
+section,metric,label,value
+defaults,global_default,Full-r4,full__all__r4
+defaults,objective_default_behavioral_policy,Behavioral default,full__all__r4
+defaults,objective_default_causal_mapping,Causal default,middle__all__r16
+defaults,objective_default_factual_association,Factual default,full__all__r4
+defaults,objective_default_lexical_binding,Lexical default,late__all__r16
+defaults,objective_default_procedural_reasoning,Procedural default,full__all__r4
+policy,global_fixed_mean_utility,Global fixed,0.4362075919335705
+policy,global_fixed_mean_oracle_regret,Global fixed,0.025255832344800316
+policy,global_fixed_top1_oracle_recovery,Global fixed,0.4
+policy,objective_fixed_mean_utility,Objective fixed,0.4384698497429813
+policy,objective_fixed_mean_oracle_regret,Objective fixed,0.022993574535389482
+policy,objective_fixed_top1_oracle_recovery,Objective fixed,0.53
+policy,compiler_mean_utility,Compiler,0.43531366152629497
+policy,compiler_mean_oracle_regret,Compiler,0.02614976275207592
+policy,compiler_top1_oracle_recovery,Compiler,0.42
+policy,oracle_mean_utility,Oracle,0.46146342427837084
+policy,oracle_mean_oracle_regret,Oracle,0.0
+policy,oracle_top1_oracle_recovery,Oracle,1.0
+policy,compiler_top2_oracle_recovery,Compiler top-2,0.73
+switches,n_compiler_departures_from_objective_default,Switches,42
+switches,fraction_switches_negative_realized_gain,Negative realized gain,0.6666666666666666
+oracle_distribution,early__all__r16_fractional_rate,Early,0.06
+oracle_distribution,middle__all__r16_fractional_rate,Middle,0.31
+oracle_distribution,late__all__r16_fractional_rate,Late,0.23
+oracle_distribution,full__all__r4_fractional_rate,Full-r4,0.4

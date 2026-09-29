@@ -1,0 +1,48 @@
+{
+  "script": "scripts/reproduce/compiler/make_exp5_lofo_appendix_metrics.py",
+  "git_commit": "40905b4987279660e68683654f9b86d1dd19097a",
+  "output_csv": "artifacts/llama/lofo\\lofo_appendix_metrics.csv",
+  "source_files": [
+    "artifacts/llama/lofo\\lofo_summary.csv",
+    "artifacts/llama/lofo\\lofo_summary.json",
+    "artifacts/llama/lofo\\behavioral_policy\\model_metadata.json",
+    "artifacts/llama/lofo\\behavioral_policy\\prediction_metrics.json",
+    "artifacts/llama/lofo\\behavioral_policy\\ranking_metrics.json",
+    "artifacts/llama/lofo\\behavioral_policy\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\causal_mapping\\model_metadata.json",
+    "artifacts/llama/lofo\\causal_mapping\\prediction_metrics.json",
+    "artifacts/llama/lofo\\causal_mapping\\ranking_metrics.json",
+    "artifacts/llama/lofo\\causal_mapping\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\factual_association\\model_metadata.json",
+    "artifacts/llama/lofo\\factual_association\\prediction_metrics.json",
+    "artifacts/llama/lofo\\factual_association\\ranking_metrics.json",
+    "artifacts/llama/lofo\\factual_association\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\lexical_binding\\model_metadata.json",
+    "artifacts/llama/lofo\\lexical_binding\\prediction_metrics.json",
+    "artifacts/llama/lofo\\lexical_binding\\ranking_metrics.json",
+    "artifacts/llama/lofo\\lexical_binding\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\procedural_reasoning\\model_metadata.json",
+    "artifacts/llama/lofo\\procedural_reasoning\\prediction_metrics.json",
+    "artifacts/llama/lofo\\procedural_reasoning\\ranking_metrics.json",
+    "artifacts/llama/lofo\\procedural_reasoning\\ranking_metrics_by_episode.csv"
+  ],
+  "data_integrity_checks": {
+    "final_lofo_run": "artifacts/llama/lofo",
+    "feature_set": "episode",
+    "held_out_objective_absent_from_training_and_validation": true,
+    "macro_validation_mae_from_folds": 0.041883900772982804,
+    "macro_top2_from_folds": 0.4699999999999999,
+    "sanity_tolerance": 0.0005
+  },
+  "columns": [
+    "held_out_family",
+    "display_name",
+    "validation_mae",
+    "test_mae",
+    "utility_corr",
+    "spearman",
+    "pairwise_accuracy",
+    "top1",
+    "top2"
+  ]
+}

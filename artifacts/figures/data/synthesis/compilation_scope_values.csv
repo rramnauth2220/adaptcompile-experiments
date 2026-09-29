@@ -1,0 +1,13 @@
+panel,regime,method,value,ci_low,ci_high,n_episodes,source_file
+A,Experiment 4,Episode,0.008833333333333334,,,100,artifacts/llama/ablations/episode\predictions_test.csv
+A,Experiment 4,Frozen behavior,0.01857638888888889,,,100,artifacts/llama/ablations/frozen_behavior\predictions_test.csv
+A,Experiment 4,Full,0.01126041666666667,,,100,artifacts/llama/prediction\predictions_test.csv
+A,Experiment 4,Module probes,0.014072916666666671,,,100,artifacts/llama/ablations/module_probes\predictions_test.csv
+B,Held-out family (LOFO),Compiler,0.08512500000000003,0.07144444444444444,0.09910095486111106,100,artifacts/llama/lofo\behavioral_policy\compiler_selection.csv;artifacts/llama/lofo\causal_mapping\compiler_selection.csv;artifacts/llama/lofo\factual_association\compiler_selection.csv;artifacts/llama/lofo\lexical_binding\compiler_selection.csv;artifacts/llama/lofo\procedural_reasoning\compiler_selection.csv
+B,Held-out family (LOFO),Global fixed,0.062020833333333344,0.050142013888888885,0.07423272569444445,100,artifacts/llama/lofo\behavioral_policy\compiler_selection.csv;artifacts/llama/lofo\causal_mapping\compiler_selection.csv;artifacts/llama/lofo\factual_association\compiler_selection.csv;artifacts/llama/lofo\lexical_binding\compiler_selection.csv;artifacts/llama/lofo\procedural_reasoning\compiler_selection.csv
+B,Represented families,Compiler,0.011260416666666667,0.005125000000000002,0.01850720486111109,100,artifacts/llama/selection\compiler_evaluation.csv
+B,Represented families,Global fixed,0.04921527777777778,0.03806571180555557,0.06070486111111112,100,artifacts/llama/geometry/geometry_dataset.csv
+C,Gemma-2-9B,Compiler,0.02614976275207592,0.018580380090945026,0.034324760280743355,100,artifacts/gemma/selection\compiler_evaluation.csv
+C,Gemma-2-9B,Objective-fixed,0.022993574535389482,0.015221715599051012,0.03178721332542506,100,artifacts/gemma/geometry/geometry_dataset.csv
+C,Llama-3.1-8B,Compiler,0.011260416666666667,0.005125000000000002,0.01850720486111109,100,artifacts/llama/selection\compiler_evaluation.csv
+C,Llama-3.1-8B,Objective-fixed,0.018423611111111113,0.011340277777777779,0.026593923611111094,100,artifacts/llama/geometry/geometry_dataset.csv

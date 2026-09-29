@@ -1,0 +1,68 @@
+{
+  "script": "scripts/reproduce/compiler/plot_main_exp2_prediction.py",
+  "input_files": [
+    "artifacts/llama/prediction\\predictions_test.csv",
+    "artifacts/llama/prediction\\prediction_metrics.json",
+    "artifacts/llama/prediction\\ranking_metrics.json",
+    "artifacts/llama/prediction\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/prediction\\model_metadata.json"
+  ],
+  "git_commit": "b8409a714279e6c130a4bf0cdd3ab17afcbca30b",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "figure": "Experiment 2 main prediction figure",
+  "panel_a_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp2_prediction_panel_a.csv",
+  "panel_b_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp2_prediction_panel_b.csv",
+  "panel_c_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp2_prediction_panel_c.csv",
+  "model_type": "random_forest",
+  "n_test_episodes": 100,
+  "n_test_config_rows": 400,
+  "primary_utility_correlation": 0.9620084689542298,
+  "primary_utility_mae": 0.02898895654210769,
+  "utility_correlation_by_method": {
+    "configuration_mean": 0.29733684974127805,
+    "objective_conditioned_mean": 0.9163081604891078,
+    "primary": 0.9620084689542298
+  },
+  "utility_mae_by_method": {
+    "configuration_mean": 0.13632425347222232,
+    "objective_conditioned_mean": 0.04362966579861109,
+    "primary": 0.02898895654210769
+  },
+  "geometry_aggregate": {
+    "configuration_mean": {
+      "mean_mae": 0.23815457465277765,
+      "mean_rmse": 0.2719750598602587
+    },
+    "objective_conditioned_mean": {
+      "mean_mae": 0.059738368055555574,
+      "mean_rmse": 0.0998000235466577
+    },
+    "primary": {
+      "mean_mae": 0.04002170538470014,
+      "mean_rmse": 0.07283612724774376
+    }
+  },
+  "ranking_aggregate": {
+    "configuration_mean": {
+      "mean_episode_spearman": 0.3605131670194948,
+      "pairwise_ranking_accuracy": 0.6716666666666665,
+      "top1_set_oracle_recovery": 0.41,
+      "top2_set_oracle_recovery": 0.63
+    },
+    "objective_conditioned_mean": {
+      "mean_episode_spearman": 0.6954868329805051,
+      "pairwise_ranking_accuracy": 0.8016666666666665,
+      "top1_set_oracle_recovery": 0.64,
+      "top2_set_oracle_recovery": 0.88
+    },
+    "primary": {
+      "mean_episode_spearman": 0.8026491106406735,
+      "pairwise_ranking_accuracy": 0.8749999999999999,
+      "top1_set_oracle_recovery": 0.77,
+      "top2_set_oracle_recovery": 0.93
+    }
+  },
+  "objective_identity_used_in_primary_predictor": false,
+  "objective_conditioned_mean_is_diagnostic_only": true
+}

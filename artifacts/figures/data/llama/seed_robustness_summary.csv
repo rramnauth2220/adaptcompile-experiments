@@ -1,0 +1,10 @@
+panel,config_id,program,n_episode_config_units,mean_utility_sd,median_utility_sd,learning_type,objective,n_episodes,strict_same_unique_winner_rate,tie_aware_common_oracle_rate
+seed_variation,early__all__r16,Early,20.0,0.023289123922536435,0.0012028130608117,,,,,
+seed_variation,middle__all__r16,Middle,20.0,0.026647493633663803,0.024209396820123852,,,,,
+seed_variation,late__all__r16,Late,20.0,0.036764899490074845,0.02298588116009825,,,,,
+seed_variation,full__all__r4,Full-r4,20.0,0.026863583972936433,0.0223362896082216,,,,,
+winner_stability,,,,,,behavioral_policy,Behavioral,4.0,0.25,0.75
+winner_stability,,,,,,causal_mapping,Causal,4.0,0.75,0.75
+winner_stability,,,,,,factual_association,Factual,4.0,0.0,0.25
+winner_stability,,,,,,lexical_binding,Lexical,4.0,0.25,0.25
+winner_stability,,,,,,procedural_reasoning,Procedural,4.0,0.75,0.75

@@ -1,0 +1,163 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_per_objective_selection.py",
+  "input_files": [
+    "artifacts/llama/geometry/geometry_dataset.csv",
+    "artifacts/llama/selection/compiler_evaluation.csv"
+  ],
+  "git_commit": "53b73bfaa0cd3a4fe91ac8a1fdda1be1742814f5",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "summary": [
+    {
+      "learning_type": "behavioral_policy",
+      "objective": "Behavioral",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.038975694444444445,
+      "top1_oracle_recovery": 0.15,
+      "mean_utility": 0.7144097222222221,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "behavioral_policy",
+      "objective": "Behavioral",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.006788194444444423,
+      "top1_oracle_recovery": 0.45,
+      "mean_utility": 0.7465972222222222,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "behavioral_policy",
+      "objective": "Behavioral",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.0006249999999999867,
+      "top1_oracle_recovery": 0.7,
+      "mean_utility": 0.7527604166666666,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "causal_mapping",
+      "objective": "Causal",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.018194444444444444,
+      "top1_oracle_recovery": 0.75,
+      "mean_utility": 0.4892013888888888,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "causal_mapping",
+      "objective": "Causal",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.018194444444444444,
+      "top1_oracle_recovery": 0.75,
+      "mean_utility": 0.4892013888888888,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "causal_mapping",
+      "objective": "Causal",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.00385416666666667,
+      "top1_oracle_recovery": 0.9,
+      "mean_utility": 0.5035416666666667,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "factual_association",
+      "objective": "Factual",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.08654513888888893,
+      "top1_oracle_recovery": 0.1,
+      "mean_utility": 0.5043749999999999,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "factual_association",
+      "objective": "Factual",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.027395833333333324,
+      "top1_oracle_recovery": 0.4,
+      "mean_utility": 0.5635243055555555,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "factual_association",
+      "objective": "Factual",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.00590277777777779,
+      "top1_oracle_recovery": 0.65,
+      "mean_utility": 0.5850173611111109,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "lexical_binding",
+      "objective": "Lexical",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.1015625,
+      "top1_oracle_recovery": 0.1,
+      "mean_utility": 0.6881944444444443,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "lexical_binding",
+      "objective": "Lexical",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.038940972222222224,
+      "top1_oracle_recovery": 0.65,
+      "mean_utility": 0.7508159722222222,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "lexical_binding",
+      "objective": "Lexical",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.043836805555555566,
+      "top1_oracle_recovery": 0.65,
+      "mean_utility": 0.7459201388888889,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "procedural_reasoning",
+      "objective": "Procedural",
+      "selector": "global_fixed",
+      "selector_label": "Global fixed",
+      "oracle_regret": 0.0007986111111111082,
+      "top1_oracle_recovery": 0.95,
+      "mean_utility": 0.44932291666666674,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "procedural_reasoning",
+      "objective": "Procedural",
+      "selector": "objective_fixed",
+      "selector_label": "Objective fixed",
+      "oracle_regret": 0.0007986111111111082,
+      "top1_oracle_recovery": 0.95,
+      "mean_utility": 0.44932291666666674,
+      "n_episodes": 20
+    },
+    {
+      "learning_type": "procedural_reasoning",
+      "objective": "Procedural",
+      "selector": "compiler",
+      "selector_label": "Compiler",
+      "oracle_regret": 0.0020833333333333676,
+      "top1_oracle_recovery": 0.95,
+      "mean_utility": 0.4480381944444445,
+      "n_episodes": 20
+    }
+  ],
+  "n_test_episodes": 100
+}

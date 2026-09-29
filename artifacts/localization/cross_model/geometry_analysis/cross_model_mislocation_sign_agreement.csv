@@ -1,0 +1,6 @@
+objective,primary_metric,preferred_condition,mislocated_condition,n_models,n_positive,agreement_rate,model_level_deltas
+lexical_binding,acquisition,early,late,5,4,0.8,gemma_2_9b_it=0.1293; llama_3_1_8b_instruct=0.2080; mistral_7b_instruct_v0_3=0.1787; olmo_2_1124_7b_instruct=0.0520; qwen2_5_14b_instruct=-0.4773
+factual_association,transfer,late,early,5,5,1.0,gemma_2_9b_it=0.0778; llama_3_1_8b_instruct=0.4867; mistral_7b_instruct_v0_3=0.3978; olmo_2_1124_7b_instruct=0.6333; qwen2_5_14b_instruct=0.3778
+behavioral_policy,boundedness,middle,late,5,5,1.0,gemma_2_9b_it=0.1000; llama_3_1_8b_instruct=0.2333; mistral_7b_instruct_v0_3=0.2511; olmo_2_1124_7b_instruct=0.1644; qwen2_5_14b_instruct=0.1178
+causal_mapping,transfer,middle,early,5,4,0.8,gemma_2_9b_it=0.0000; llama_3_1_8b_instruct=0.0267; mistral_7b_instruct_v0_3=0.1622; olmo_2_1124_7b_instruct=0.0711; qwen2_5_14b_instruct=0.1111
+procedural_reasoning,transfer,middle,early,5,5,1.0,gemma_2_9b_it=0.0133; llama_3_1_8b_instruct=0.1911; mistral_7b_instruct_v0_3=0.2422; olmo_2_1124_7b_instruct=0.3244; qwen2_5_14b_instruct=0.2178

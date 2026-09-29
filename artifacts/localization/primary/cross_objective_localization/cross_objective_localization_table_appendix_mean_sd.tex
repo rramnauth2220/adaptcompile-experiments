@@ -1,0 +1,39 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcccccc}
+\toprule
+Objective & Condition & Budget & ID & Para & Acquisition & Transfer & Boundedness \\
+\midrule
+Lexical binding & Full & 10 & 0.995 $\pm$ 0.009 & 1.000 $\pm$ 0.000 & 0.997 $\pm$ 0.005 & 0.849 $\pm$ 0.033 & 0.397 $\pm$ 0.063 \\
+ & Early & 10 & 0.975 $\pm$ 0.034 & 0.969 $\pm$ 0.023 & 0.972 $\pm$ 0.028 & 0.406 $\pm$ 0.093 & 0.680 $\pm$ 0.076 \\
+ & Middle & 10 & 0.887 $\pm$ 0.021 & 0.841 $\pm$ 0.018 & 0.864 $\pm$ 0.012 & 0.507 $\pm$ 0.077 & 0.442 $\pm$ 0.043 \\
+ & Late & 10 & 0.796 $\pm$ 0.014 & 0.729 $\pm$ 0.016 & 0.763 $\pm$ 0.013 & 0.550 $\pm$ 0.015 & 0.337 $\pm$ 0.003 \\
+\addlinespace[0.35em]
+Factual association & Full & 8 & 0.896 $\pm$ 0.000 & 0.896 $\pm$ 0.000 & 0.896 $\pm$ 0.000 & 0.820 $\pm$ 0.027 & 0.333 $\pm$ 0.029 \\
+ & Early & 8 & 0.355 $\pm$ 0.023 & 0.293 $\pm$ 0.018 & 0.324 $\pm$ 0.021 & 0.204 $\pm$ 0.062 & 0.376 $\pm$ 0.108 \\
+ & Middle & 8 & 0.371 $\pm$ 0.061 & 0.389 $\pm$ 0.012 & 0.380 $\pm$ 0.035 & 0.353 $\pm$ 0.024 & 0.469 $\pm$ 0.137 \\
+ & Late & 8 & 0.451 $\pm$ 0.030 & 0.592 $\pm$ 0.049 & 0.521 $\pm$ 0.009 & 0.631 $\pm$ 0.008 & 0.571 $\pm$ 0.044 \\
+\addlinespace[0.35em]
+Behavioral policy & Full & 10 & 0.928 $\pm$ 0.016 & 0.952 $\pm$ 0.028 & 0.940 $\pm$ 0.016 & 0.942 $\pm$ 0.008 & 0.896 $\pm$ 0.073 \\
+ & Early & 10 & 0.843 $\pm$ 0.086 & 0.840 $\pm$ 0.028 & 0.841 $\pm$ 0.047 & 0.882 $\pm$ 0.027 & 0.731 $\pm$ 0.201 \\
+ & Middle & 10 & 0.888 $\pm$ 0.062 & 0.872 $\pm$ 0.084 & 0.880 $\pm$ 0.073 & 0.904 $\pm$ 0.080 & 0.858 $\pm$ 0.097 \\
+ & Late & 10 & 0.933 $\pm$ 0.036 & 0.928 $\pm$ 0.024 & 0.931 $\pm$ 0.030 & 0.876 $\pm$ 0.021 & 0.642 $\pm$ 0.052 \\
+\addlinespace[0.35em]
+Causal mapping & Full & 10 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 0.802 $\pm$ 0.090 & 0.500 $\pm$ 0.000 \\
+ & Early & 10 & 0.979 $\pm$ 0.037 & 0.891 $\pm$ 0.135 & 0.935 $\pm$ 0.086 & 0.551 $\pm$ 0.107 & 0.284 $\pm$ 0.085 \\
+ & Middle & 10 & 1.000 $\pm$ 0.000 & 0.971 $\pm$ 0.009 & 0.985 $\pm$ 0.005 & 0.680 $\pm$ 0.013 & 0.500 $\pm$ 0.000 \\
+ & Late & 10 & 0.992 $\pm$ 0.008 & 0.933 $\pm$ 0.047 & 0.963 $\pm$ 0.024 & 0.587 $\pm$ 0.020 & 0.447 $\pm$ 0.012 \\
+\addlinespace[0.35em]
+Procedural reasoning & Full & 8 & 1.000 $\pm$ 0.000 & 0.653 $\pm$ 0.017 & 0.827 $\pm$ 0.008 & 0.687 $\pm$ 0.013 & 0.751 $\pm$ 0.095 \\
+ & Early & 8 & 0.997 $\pm$ 0.005 & 0.501 $\pm$ 0.059 & 0.749 $\pm$ 0.030 & 0.338 $\pm$ 0.060 & 0.440 $\pm$ 0.081 \\
+ & Middle & 8 & 0.915 $\pm$ 0.076 & 0.597 $\pm$ 0.012 & 0.756 $\pm$ 0.043 & 0.624 $\pm$ 0.096 & 0.764 $\pm$ 0.108 \\
+ & Late & 8 & 0.968 $\pm$ 0.000 & 0.232 $\pm$ 0.042 & 0.600 $\pm$ 0.021 & 0.587 $\pm$ 0.058 & 0.820 $\pm$ 0.000 \\
+\bottomrule
+\end{tabular}
+\caption{
+Detailed cross-objective localization summary. ID and Para report in-distribution and paraphrase accuracy, respectively. Acquisition is the mean of ID and Para. Transfer is accuracy on held-out generalization examples. Boundedness is objective-specific negative-control accuracy. Values are mean $\pm$ standard deviation across seeds.
+}
+\label{tab:cross-objective-localization-appendix}
+\end{table*}

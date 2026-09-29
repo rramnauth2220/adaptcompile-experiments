@@ -1,0 +1,113 @@
+{
+  "records": "artifacts/gemma/geometry/geometry_records_by_seed.csv",
+  "config_ids": [
+    "early__all__r16",
+    "middle__all__r16",
+    "late__all__r16",
+    "full__all__r4"
+  ],
+  "utility": "mean(acquisition, transfer, boundedness, preservation)",
+  "eval_splits": [
+    "test",
+    "validation"
+  ],
+  "n_records": 3200,
+  "n_units": 800,
+  "n_train_units": 400,
+  "n_eval_units": 400,
+  "global_baseline": {
+    "selected_config_id": "full__all__r4",
+    "tie_set": [
+      "full__all__r4"
+    ],
+    "train_mean_utility": 0.45280152728351125,
+    "train_mean_by_config": {
+      "early__all__r16": 0.3771566577698695,
+      "full__all__r4": 0.45280152728351125,
+      "late__all__r16": 0.41810713226571766,
+      "middle__all__r16": 0.43644009489916963
+    },
+    "n_train_units": 400
+  },
+  "objective_baselines": {
+    "behavioral_policy": {
+      "selected_config_id": "full__all__r4",
+      "tie_set": [
+        "full__all__r4"
+      ],
+      "train_mean_utility": 0.5170718416370107,
+      "train_mean_by_config": {
+        "early__all__r16": 0.38874221530249115,
+        "full__all__r4": 0.5170718416370107,
+        "late__all__r16": 0.40593675860023726,
+        "middle__all__r16": 0.5010053380782918
+      },
+      "n_train_units": 80
+    },
+    "causal_mapping": {
+      "selected_config_id": "middle__all__r16",
+      "tie_set": [
+        "middle__all__r16"
+      ],
+      "train_mean_utility": 0.39368772241992883,
+      "train_mean_by_config": {
+        "early__all__r16": 0.35010861506524316,
+        "full__all__r4": 0.38863100533807826,
+        "late__all__r16": 0.3526097271648873,
+        "middle__all__r16": 0.39368772241992883
+      },
+      "n_train_units": 80
+    },
+    "factual_association": {
+      "selected_config_id": "full__all__r4",
+      "tie_set": [
+        "full__all__r4"
+      ],
+      "train_mean_utility": 0.4831691132858838,
+      "train_mean_by_config": {
+        "early__all__r16": 0.37763975385527876,
+        "full__all__r4": 0.4831691132858838,
+        "late__all__r16": 0.46143275504151837,
+        "middle__all__r16": 0.42551230723606165
+      },
+      "n_train_units": 80
+    },
+    "lexical_binding": {
+      "selected_config_id": "late__all__r16",
+      "tie_set": [
+        "late__all__r16"
+      ],
+      "train_mean_utility": 0.5770766607354686,
+      "train_mean_by_config": {
+        "early__all__r16": 0.5199599644128113,
+        "full__all__r4": 0.5763030100830367,
+        "late__all__r16": 0.5770766607354686,
+        "middle__all__r16": 0.5764119958481613
+      },
+      "n_train_units": 80
+    },
+    "procedural_reasoning": {
+      "selected_config_id": "full__all__r4",
+      "tie_set": [
+        "full__all__r4"
+      ],
+      "train_mean_utility": 0.29883266607354686,
+      "train_mean_by_config": {
+        "early__all__r16": 0.2493327402135231,
+        "full__all__r4": 0.29883266607354686,
+        "late__all__r16": 0.2934797597864769,
+        "middle__all__r16": 0.2855831109134045
+      },
+      "n_train_units": 80
+    }
+  },
+  "warnings": [],
+  "outputs": {
+    "episode_utilities": "artifacts/gemma/geometry/headroom/headroom_episode_utilities.csv",
+    "winning_config_counts": "artifacts/gemma/geometry/headroom/headroom_winning_config_counts.csv",
+    "tie_sets": "artifacts/gemma/geometry/headroom/headroom_tie_sets.csv",
+    "top2_margins": "artifacts/gemma/geometry/headroom/headroom_top2_margins.csv",
+    "baseline_detail": "artifacts/gemma/geometry/headroom/headroom_baseline_detail.csv",
+    "baseline_summary": "artifacts/gemma/geometry/headroom/headroom_baseline_summary.csv"
+  }
+}

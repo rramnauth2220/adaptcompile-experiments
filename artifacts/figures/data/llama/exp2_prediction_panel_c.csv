@@ -1,0 +1,13 @@
+method,method_label,metric,metric_label,score,n_episodes
+configuration_mean,Configuration mean,mean_episode_spearman,Rank corr.,0.3605131670194948,100
+configuration_mean,Configuration mean,pairwise_ranking_accuracy,Pairwise,0.6716666666666665,100
+configuration_mean,Configuration mean,top1_set_oracle_recovery,Top-1,0.41,100
+configuration_mean,Configuration mean,top2_set_oracle_recovery,Top-2,0.63,100
+objective_conditioned_mean,Objective-conditioned,mean_episode_spearman,Rank corr.,0.6954868329805051,100
+objective_conditioned_mean,Objective-conditioned,pairwise_ranking_accuracy,Pairwise,0.8016666666666665,100
+objective_conditioned_mean,Objective-conditioned,top1_set_oracle_recovery,Top-1,0.64,100
+objective_conditioned_mean,Objective-conditioned,top2_set_oracle_recovery,Top-2,0.88,100
+primary,Primary predictor,mean_episode_spearman,Rank corr.,0.8026491106406735,100
+primary,Primary predictor,pairwise_ranking_accuracy,Pairwise,0.8749999999999999,100
+primary,Primary predictor,top1_set_oracle_recovery,Top-1,0.77,100
+primary,Primary predictor,top2_set_oracle_recovery,Top-2,0.93,100

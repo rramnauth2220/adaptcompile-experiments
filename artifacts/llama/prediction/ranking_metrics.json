@@ -1,0 +1,32 @@
+{
+  "configuration_mean": {
+    "mean_episode_spearman": 0.3605131670194948,
+    "pairwise_ranking_accuracy": 0.6716666666666665,
+    "top1_set_oracle_recovery": 0.41,
+    "top2_set_oracle_recovery": 0.63,
+    "top1_set_fractional_oracle_credit": 0.41,
+    "top2_set_fractional_oracle_credit": 0.315,
+    "selected_config_oracle_optimal": 0.41,
+    "n_episodes": 100
+  },
+  "objective_conditioned_mean": {
+    "mean_episode_spearman": 0.6954868329805052,
+    "pairwise_ranking_accuracy": 0.8016666666666665,
+    "top1_set_oracle_recovery": 0.64,
+    "top2_set_oracle_recovery": 0.88,
+    "top1_set_fractional_oracle_credit": 0.64,
+    "top2_set_fractional_oracle_credit": 0.44,
+    "selected_config_oracle_optimal": 0.64,
+    "n_episodes": 100
+  },
+  "primary": {
+    "mean_episode_spearman": 0.8026491106406735,
+    "pairwise_ranking_accuracy": 0.8749999999999999,
+    "top1_set_oracle_recovery": 0.77,
+    "top2_set_oracle_recovery": 0.93,
+    "top1_set_fractional_oracle_credit": 0.77,
+    "top2_set_fractional_oracle_credit": 0.465,
+    "selected_config_oracle_optimal": 0.77,
+    "n_episodes": 100
+  }
+}

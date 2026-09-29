@@ -1,0 +1,16 @@
+objective,metric,most_common_best_region,agreement_count,n_models,agreement_rate,all_model_regions
+behavioral_policy,acquisition,late,3,5,0.6,gemma_2_9b_it=middle; llama_3_1_8b_instruct=late; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=late
+behavioral_policy,transfer,late,3,5,0.6,gemma_2_9b_it=middle; llama_3_1_8b_instruct=middle; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=late; qwen2_5_14b_instruct=late
+behavioral_policy,boundedness,middle,5,5,1.0,gemma_2_9b_it=middle; llama_3_1_8b_instruct=middle; mistral_7b_instruct_v0_3=middle; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=middle
+causal_mapping,acquisition,middle,3,5,0.6,gemma_2_9b_it=early; llama_3_1_8b_instruct=middle; mistral_7b_instruct_v0_3=middle; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=early
+causal_mapping,transfer,middle,4,5,0.8,gemma_2_9b_it=early; llama_3_1_8b_instruct=middle; mistral_7b_instruct_v0_3=middle; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=middle
+causal_mapping,boundedness,middle,2,5,0.4,gemma_2_9b_it=early; llama_3_1_8b_instruct=middle; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=late
+factual_association,acquisition,late,3,5,0.6,gemma_2_9b_it=early; llama_3_1_8b_instruct=late; mistral_7b_instruct_v0_3=middle; olmo_2_1124_7b_instruct=late; qwen2_5_14b_instruct=late
+factual_association,transfer,late,4,5,0.8,gemma_2_9b_it=middle; llama_3_1_8b_instruct=late; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=late; qwen2_5_14b_instruct=late
+factual_association,boundedness,middle,2,5,0.4,gemma_2_9b_it=middle; llama_3_1_8b_instruct=late; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=early; qwen2_5_14b_instruct=middle
+lexical_binding,acquisition,early,4,5,0.8,gemma_2_9b_it=early; llama_3_1_8b_instruct=early; mistral_7b_instruct_v0_3=early; olmo_2_1124_7b_instruct=early; qwen2_5_14b_instruct=late
+lexical_binding,transfer,early,3,5,0.6,gemma_2_9b_it=early; llama_3_1_8b_instruct=early; mistral_7b_instruct_v0_3=early; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=middle
+lexical_binding,boundedness,early,3,5,0.6,gemma_2_9b_it=middle; llama_3_1_8b_instruct=early; mistral_7b_instruct_v0_3=early; olmo_2_1124_7b_instruct=early; qwen2_5_14b_instruct=late
+procedural_reasoning,acquisition,late,2,5,0.4,gemma_2_9b_it=late; llama_3_1_8b_instruct=early; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=middle
+procedural_reasoning,transfer,late,3,5,0.6,gemma_2_9b_it=late; llama_3_1_8b_instruct=middle; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=middle; qwen2_5_14b_instruct=late
+procedural_reasoning,boundedness,late,4,5,0.8,gemma_2_9b_it=middle; llama_3_1_8b_instruct=late; mistral_7b_instruct_v0_3=late; olmo_2_1124_7b_instruct=late; qwen2_5_14b_instruct=late

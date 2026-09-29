@@ -1,0 +1,153 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_exp1_seed_robustness.py",
+  "input_files": [
+    "artifacts/llama/geometry/robustness/geometry_records_3seed.csv",
+    "artifacts/llama/geometry/robustness\\per_config_seed_variation.csv",
+    "artifacts/llama/geometry/robustness\\winner_stability.csv",
+    "artifacts/llama/geometry/robustness\\robust_headroom_by_episode.csv"
+  ],
+  "git_commit": "b8409a714279e6c130a4bf0cdd3ab17afcbca30b",
+  "random_seed": 2026,
+  "bootstrap_resamples": 20000,
+  "figure": "A2 adaptation seed robustness",
+  "summary_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp1_seed_robustness_summary.csv",
+  "definitions": {
+    "utility_sd": "standard deviation of balanced utility across seeds within an episode x program cell",
+    "strict_stability": "fraction of episodes with the same unique oracle winner for all seeds",
+    "tie_aware_stability": "fraction of episodes whose per-seed oracle sets have a nonempty intersection"
+  },
+  "raw_integrity": {
+    "n_episodes": 20,
+    "n_configs": 4,
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "n_seed_level_rows": 240
+  },
+  "summary": [
+    {
+      "section": "overall_seed_variation",
+      "n_episodes": 20,
+      "n_configs": 4,
+      "n_episode_config_units": 80,
+      "seeds": "11|22|33",
+      "mean_utility_sd": 0.028391275254802874,
+      "median_utility_sd": 0.0220658854279123,
+      "mean_utility_range": 0.05296874999999997
+    },
+    {
+      "section": "seed_variation_by_program",
+      "config_id": "early__all__r16",
+      "program": "Early",
+      "n_episode_config_units": 20,
+      "mean_utility_sd": 0.023289123922536435,
+      "mean_utility_sd_ci_low": 0.007942128608399001,
+      "mean_utility_sd_ci_high": 0.043454759602247206,
+      "median_utility_sd": 0.0012028130608117,
+      "mean_utility_range": 0.04380208333333331
+    },
+    {
+      "section": "seed_variation_by_program",
+      "config_id": "middle__all__r16",
+      "program": "Middle",
+      "n_episode_config_units": 20,
+      "mean_utility_sd": 0.026647493633663803,
+      "mean_utility_sd_ci_low": 0.02013625239799244,
+      "mean_utility_sd_ci_high": 0.033660718130197435,
+      "median_utility_sd": 0.024209396820123852,
+      "mean_utility_range": 0.048749999999999946
+    },
+    {
+      "section": "seed_variation_by_program",
+      "config_id": "late__all__r16",
+      "program": "Late",
+      "n_episode_config_units": 20,
+      "mean_utility_sd": 0.036764899490074845,
+      "mean_utility_sd_ci_low": 0.02145602966297791,
+      "mean_utility_sd_ci_high": 0.05473758126312066,
+      "median_utility_sd": 0.02298588116009825,
+      "mean_utility_range": 0.06874999999999996
+    },
+    {
+      "section": "seed_variation_by_program",
+      "config_id": "full__all__r4",
+      "program": "Full-r4",
+      "n_episode_config_units": 20,
+      "mean_utility_sd": 0.026863583972936433,
+      "mean_utility_sd_ci_low": 0.014166957605485224,
+      "mean_utility_sd_ci_high": 0.0414832937506968,
+      "median_utility_sd": 0.0223362896082216,
+      "mean_utility_range": 0.050572916666666634
+    },
+    {
+      "section": "overall_winner_stability",
+      "n_episodes": 20,
+      "same_unique_winner_count": 8,
+      "same_unique_winner_rate": 0.4,
+      "common_oracle_count": 11,
+      "common_oracle_rate": 0.55
+    },
+    {
+      "section": "winner_stability_by_objective",
+      "learning_type": "behavioral_policy",
+      "objective": "Behavioral",
+      "n_episodes": 4,
+      "same_unique_winner_count": 1,
+      "same_unique_winner_rate": 0.25,
+      "common_oracle_count": 3,
+      "common_oracle_rate": 0.75
+    },
+    {
+      "section": "winner_stability_by_objective",
+      "learning_type": "causal_mapping",
+      "objective": "Causal",
+      "n_episodes": 4,
+      "same_unique_winner_count": 3,
+      "same_unique_winner_rate": 0.75,
+      "common_oracle_count": 3,
+      "common_oracle_rate": 0.75
+    },
+    {
+      "section": "winner_stability_by_objective",
+      "learning_type": "factual_association",
+      "objective": "Factual",
+      "n_episodes": 4,
+      "same_unique_winner_count": 0,
+      "same_unique_winner_rate": 0.0,
+      "common_oracle_count": 1,
+      "common_oracle_rate": 0.25
+    },
+    {
+      "section": "winner_stability_by_objective",
+      "learning_type": "lexical_binding",
+      "objective": "Lexical",
+      "n_episodes": 4,
+      "same_unique_winner_count": 1,
+      "same_unique_winner_rate": 0.25,
+      "common_oracle_count": 1,
+      "common_oracle_rate": 0.25
+    },
+    {
+      "section": "winner_stability_by_objective",
+      "learning_type": "procedural_reasoning",
+      "objective": "Procedural",
+      "n_episodes": 4,
+      "same_unique_winner_count": 3,
+      "same_unique_winner_rate": 0.75,
+      "common_oracle_count": 3,
+      "common_oracle_rate": 0.75
+    },
+    {
+      "section": "seed_averaged_headroom",
+      "n_episodes": 20,
+      "global_utility_mean": 0.5807291666666667,
+      "objective_fixed_utility_mean": 0.6046875,
+      "oracle_utility_mean": 0.6211111111111112,
+      "objective_to_oracle_regret_mean": 0.016423611111111097,
+      "top2_margin_mean": 0.0531944444444444,
+      "top2_margin_median": 0.0352430555555555
+    }
+  ]
+}

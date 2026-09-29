@@ -1,0 +1,7 @@
+# Versions verified in the available CPU validation runtime where recoverable.
+numpy==2.3.5
+pandas==3.0.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+Pillow==12.3.0
+reportlab==4.4.9

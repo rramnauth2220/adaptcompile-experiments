@@ -1,0 +1,160 @@
+{
+  "script": "scripts/reproduce/compiler/plot_appendix_exp5_ranking_generalization.py",
+  "input_files": [
+    "artifacts/llama/prediction\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/prediction\\predictions_test.csv",
+    "artifacts/llama/prediction\\model_metadata.json",
+    "artifacts/llama/prediction\\ranking_metrics.json",
+    "artifacts/llama/lofo\\lofo_summary.csv",
+    "artifacts/llama/lofo\\lofo_summary.json",
+    "artifacts/llama/lofo\\behavioral_policy\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\behavioral_policy\\predictions_test.csv",
+    "artifacts/llama/lofo\\behavioral_policy\\model_metadata.json",
+    "artifacts/llama/lofo\\behavioral_policy\\ranking_metrics.json",
+    "artifacts/llama/lofo\\causal_mapping\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\causal_mapping\\predictions_test.csv",
+    "artifacts/llama/lofo\\causal_mapping\\model_metadata.json",
+    "artifacts/llama/lofo\\causal_mapping\\ranking_metrics.json",
+    "artifacts/llama/lofo\\factual_association\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\factual_association\\predictions_test.csv",
+    "artifacts/llama/lofo\\factual_association\\model_metadata.json",
+    "artifacts/llama/lofo\\factual_association\\ranking_metrics.json",
+    "artifacts/llama/lofo\\lexical_binding\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\lexical_binding\\predictions_test.csv",
+    "artifacts/llama/lofo\\lexical_binding\\model_metadata.json",
+    "artifacts/llama/lofo\\lexical_binding\\ranking_metrics.json",
+    "artifacts/llama/lofo\\procedural_reasoning\\ranking_metrics_by_episode.csv",
+    "artifacts/llama/lofo\\procedural_reasoning\\predictions_test.csv",
+    "artifacts/llama/lofo\\procedural_reasoning\\model_metadata.json",
+    "artifacts/llama/lofo\\procedural_reasoning\\ranking_metrics.json"
+  ],
+  "git_commit": "40905b4987279660e68683654f9b86d1dd19097a",
+  "random_seed": 2026,
+  "bootstrap_resamples": null,
+  "figure": "fig_exp5_ranking_generalization",
+  "summary_csv": "artifacts/<ARCHIVE_ROOT>/figures/data/llama/exp5_ranking_generalization.csv",
+  "summary": [
+    {
+      "objective": "Behavioral",
+      "represented_spearman": 0.9,
+      "lofo_spearman": 0.5199999999999999,
+      "spearman_delta": -0.3800000000000001,
+      "represented_pairwise": 0.9166666666666666,
+      "lofo_pairwise": 0.7083333333333333,
+      "pairwise_delta": -0.20833333333333337
+    },
+    {
+      "objective": "Causal",
+      "represented_spearman": 0.9400000000000001,
+      "lofo_spearman": 0.4699999999999999,
+      "spearman_delta": -0.47000000000000014,
+      "represented_pairwise": 0.9583333333333334,
+      "lofo_pairwise": 0.6916666666666665,
+      "pairwise_delta": -0.26666666666666683
+    },
+    {
+      "objective": "Factual",
+      "represented_spearman": 0.6032455532033676,
+      "lofo_spearman": -0.09999999999999994,
+      "spearman_delta": -0.7032455532033676,
+      "represented_pairwise": 0.7583333333333333,
+      "lofo_pairwise": 0.4833333333333333,
+      "pairwise_delta": -0.275
+    },
+    {
+      "objective": "Lexical",
+      "represented_spearman": 0.63,
+      "lofo_spearman": -0.55,
+      "spearman_delta": -1.1800000000000002,
+      "represented_pairwise": 0.7833333333333333,
+      "lofo_pairwise": 0.25833333333333325,
+      "pairwise_delta": -0.5250000000000001
+    },
+    {
+      "objective": "Procedural",
+      "represented_spearman": 0.9400000000000001,
+      "lofo_spearman": -0.049999999999999975,
+      "spearman_delta": -0.99,
+      "represented_pairwise": 0.9583333333333334,
+      "lofo_pairwise": 0.4749999999999999,
+      "pairwise_delta": -0.48333333333333345
+    }
+  ],
+  "intervals": "none; plotted values are fold/objective means read from final evaluator outputs",
+  "data_integrity_checks": {
+    "represented": {
+      "source": "ordinary held-out Experiment 2 final full_auto primary predictor",
+      "feature_set": "full",
+      "test_episodes": 100,
+      "test_rows": 400,
+      "balanced_utility": "observed_utility and primary_predicted_utility equal mean(A,T,B,P)",
+      "pair_tie_counts": {
+        "total_pairs": 600,
+        "observed_ties": 2,
+        "predicted_ties": 0
+      }
+    },
+    "lofo": {
+      "source": "final Experiment 5 episode-only LOFO folds",
+      "feature_set": "episode",
+      "held_out_family_absent_from_training_and_validation": true,
+      "macro_spearman": 0.0579999999999999,
+      "macro_pairwise": 0.5233333333333333,
+      "balanced_utility": "observed_utility and primary_predicted_utility equal mean(A,T,B,P)",
+      "pair_tie_counts_by_fold": {
+        "behavioral_policy": {
+          "total_pairs": 120,
+          "observed_ties": 0,
+          "predicted_ties": 0
+        },
+        "causal_mapping": {
+          "total_pairs": 120,
+          "observed_ties": 0,
+          "predicted_ties": 0
+        },
+        "factual_association": {
+          "total_pairs": 120,
+          "observed_ties": 2,
+          "predicted_ties": 0
+        },
+        "lexical_binding": {
+          "total_pairs": 120,
+          "observed_ties": 0,
+          "predicted_ties": 0
+        },
+        "procedural_reasoning": {
+          "total_pairs": 120,
+          "observed_ties": 0,
+          "predicted_ties": 0
+        }
+      }
+    },
+    "same_objectives": [
+      "Behavioral",
+      "Causal",
+      "Factual",
+      "Lexical",
+      "Procedural"
+    ],
+    "candidate_programs": [
+      "early__all__r16",
+      "middle__all__r16",
+      "late__all__r16",
+      "full__all__r4"
+    ],
+    "ranking_aggregation": "mean over primary per-episode ranking_metrics_by_episode rows within objective",
+    "spearman_convention": "evaluator rank_episode Spearman over four candidate programs using tie-aware ranks",
+    "pairwise_convention": "evaluator rank_episode pairwise sign agreement over six unordered candidate-program pairs",
+    "pairwise_chance_assessment": {
+      "chance_line_at_0_5_used": true,
+      "observed_tied_pairs_total": 4,
+      "predicted_tied_pairs_total": 0
+    }
+  },
+  "pairwise_chance_reference": {
+    "shown": true,
+    "value": 0.5,
+    "rationale": "Pairwise accuracy is sign agreement over unordered program pairs. A random strict ordering matches each non-tied observed pair with probability 0.5; observed ties are rare in these saved tables and are recorded in pair_tie_counts."
+  },
+  "caption": "Program-ranking fidelity under leave-one-family-out generalization. Within-episode agreement between predicted and observed adaptation-program orderings is compared when the learning family is represented during meta-training versus excluded entirely under leave-one-family-out (LOFO) evaluation. (A) Spearman rank correlation. (B) Pairwise ranking accuracy. Ranking fidelity decreases across all five objectives when the learning family is unseen, with particularly large degradation for factual, lexical, and procedural episodes."
+}

@@ -1,0 +1,6 @@
+learning_type,objective,n_episodes,mean_delta,ci_low,ci_high,n_negative,n_positive
+behavioral_policy,Behavioral,20,0.0,0.0,0.0,0,0
+causal_mapping,Causal,20,0.0011328588374851871,-0.011361840154211138,0.01560732997232107,14,6
+factual_association,Factual,20,0.0,0.0,0.0,0,0
+lexical_binding,Lexical,20,-0.004517595887702652,-0.013688352609727169,0.004282325029655984,6,4
+procedural_reasoning,Procedural,20,-0.012396204033214722,-0.028938945729537396,0.0027576117042309063,8,4
